@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import useSpeechRecognition from './hooks/useSpeechRecognitionHook';
 
 function App() {
+  const {
+    text, isListening, hasSupport, startListening, stopListening
+  } = useSpeechRecognition()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {hasSupport ? 
+        <>
+          <h1>TEST</h1>
+          <button onMouseDown={startListening} onMouseUp={stopListening}>Начать запись</button>
+          <h3>{text}</h3>
+          {isListening ? <div>Вас слушают</div>: ''}
+        </>:
+          <h1>Ваш бразуер не поддерживает данную функцию</h1>
+      }
+    </>
   );
 }
 
