@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/SpeechTest/static/css/main.c56de2bf.css",
-    "main.js": "/SpeechTest/static/js/main.39b19f43.js",
+    "main.js": "/SpeechTest/static/js/main.f63da4bc.js",
     "index.html": "/SpeechTest/index.html",
     "main.c56de2bf.css.map": "/SpeechTest/static/css/main.c56de2bf.css.map",
-    "main.39b19f43.js.map": "/SpeechTest/static/js/main.39b19f43.js.map"
+    "main.f63da4bc.js.map": "/SpeechTest/static/js/main.f63da4bc.js.map"
   },
   "entrypoints": [
     "static/css/main.c56de2bf.css",
-    "static/js/main.39b19f43.js"
+    "static/js/main.f63da4bc.js"
   ]
 }
