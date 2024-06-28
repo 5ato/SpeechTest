@@ -1,4 +1,5 @@
 import useSpeechRecognition from "./hooks/useSpeechRecognitionHook";
+import ListAny from "./ListAny";
 
 export default function CustomExample(){
     const {
@@ -16,6 +17,7 @@ export default function CustomExample(){
             </>:
               <h1>Ваш бразуер не поддерживает данную функцию</h1>
           }
+          <ListAny word={text.slice(0, text.length-1)}/>
         </>
       );
 }

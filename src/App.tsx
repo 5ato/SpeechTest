@@ -3,7 +3,9 @@ import CustomExample from './customHook';
 
 function App() {
   return (
-    <CustomExample/>
+    <>
+      <CustomExample/>
+    </>
   )
 }
 
