@@ -22,7 +22,6 @@ export default function ListAny({ word }: ListAnyProps) {
     const [list, setList] = useState<DataList[] | null>(data)
     
     const sortedList = useMemo(() => {
-        console.log(word, word.length)
         if (word) {
             return list?.filter(item => {
                 return item.title.toLowerCase().match(wordReg(word))
